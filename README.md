@@ -50,7 +50,7 @@ export const App = () => (
 
 ## asyncCache api
 
-* read(key, asyncFunction)
+### read(key, asyncFunction)
 
 Returns current state of promise which is defined as
 
@@ -61,7 +61,7 @@ type AsyncState =
   | { state: "rejected", payload: Error };
 ```
 
-* readWithParam(key, asyncFunction, parameter)
+### readWithParam(key, asyncFunction, parameter)
 
 Same as read but allows additional param to distinct cache entries with the same key.
 
@@ -83,7 +83,7 @@ const fetchItems = ({ filterBy }) =>
 </ctx.Consumer>;
 ```
 
-* reset(key)
+### reset(key)
 
 Removes current state of entry with the key and refresh all renders to refetch data
 
@@ -107,7 +107,7 @@ Removes current state of entry with the key and refresh all renders to refetch d
 </ctx.Consumer>
 ```
 
-* resetWithParam(key, param)
+### resetWithParam(key, param)
 
 Same as reset by accepts additional param similar to readWithParam
 
