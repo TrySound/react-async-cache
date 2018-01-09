@@ -1,0 +1,14 @@
+[ignore]
+
+[untyped]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+include_warnings=true
+
+[strict]
